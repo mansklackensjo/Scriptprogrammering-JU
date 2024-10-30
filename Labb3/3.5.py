@@ -6,3 +6,5 @@ def counter(listOfStrings:list, string:str):
         
     return count
 
+print(counter(["a", "a", "a", "b"], "b"))
+
