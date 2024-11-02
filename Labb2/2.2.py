@@ -1,7 +1,11 @@
-def average(listOfNumbers: list):
-    return sum(listOfNumbers)/len(listOfNumbers)
+def sums(list):
+    sum = 0
+    for number in list:
+        sum += number
+    
+    return sum
 
+def average(listOfNumbers):
+    return sums(listOfNumbers)/len(listOfNumbers)
 
-print(average([2, 2, 6, 6]))
-
-print(average([-3, 4, 2, 9]))
+print(average([2, 4, 6]))
