@@ -1,7 +1,7 @@
 def counter(listOfStrings:list, string:str):
     count = 0
-    for i in listOfStrings:
-        if string == i:
+    for str in listOfStrings:
+        if string == str:
             count += 1
         
     return count
