@@ -37,7 +37,7 @@ import time
 # tic = time.perf_counter()
 # something to time
 # toc = time.perf_counter()
-# print(f"It took {toc - tic:0.4f} seconds") four decimals
+# print(f"It took {toc - tic:0.4f} seconds") # Gives four decimals
 
 
 
@@ -75,7 +75,7 @@ def run_quiz():
         print(question_text)
         player_answer = input("Your answer: ")
 
-
+load_quiz(mans_quiz)
 run_quiz()
 
 

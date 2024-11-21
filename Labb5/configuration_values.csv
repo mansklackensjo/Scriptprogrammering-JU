@@ -1,0 +1,20 @@
+HOSTNAME,R1,R2,R3,R4,R5
+ENABLEPASSWORD,cisco,cisco,cisco,cisco,cisco
+INT0,gi0/0,gi0/0,gi0/0,s0/0/0,s0/0/1
+DESCINT0,Link to Client Network,Link to HR  Network,Link-net to R1,Link to Telia-WAN,Link to SUNET-WAN
+IPINT0,192.168.10.1,10.0.25.1,10.0.1.1,86.42.125.1,192.55.65.1
+NETMASKINT0,255.255.255.0,255.255.255.0,255.255.255.252,255.255.255.252,255.255.255.252
+LINKLOCALINT0,fe80::1,fe80::2,fe80::3,fe80::4,fe80::5
+IPV6INT0ANDPREFIX,2001:db8:acad:1::1/64,2001:db8:acad:2::1/64,2001:db8:acad:3::1/64,2001:db8:acad:4::1/64,2001:db8:acad:5::1/64
+SHUTDOWNEMPTYORNOINT0,no,no,no,no,no
+INT1,gi0/1,gi0/1,gi0/1,gi0/1,gi0/1
+DESCINT1,Link-net to R3,Link-net to R4,Link to IP Only-WAN,Link-net to R2,Link to Economy Network
+IPINT1,10.1.1.2,10.10.25.1,65.42.52.65,10.10.25.2,172.16.0.1
+NETMASKINT1,255.255.255.252,255.255.255.252,255.255.255.252,255.255.255.252,255.255.255.0
+LINKLOCALINT1,fe80::1,fe80::2,fe80::3,fe80::4,fe80::5
+IPV6INT1ANDPREFIX,2001:db8:acad:3::2/64,2001:db8:acad:10::1/64,2001:abcd:beef::2/64,2001:db8:acad:10::2/64,2001:db8:acad:abcd::2/64
+SHUTDOWNEMPTYORNOINT1,no,no,no,no,no
+BANNERMOTD,You shall not pass!,You shall not pass!,You shall not pass!,You shall not pass!,You shall not pass!
+CONSOLEPASSWORD,cisco1,cisco2,cisco3,cisco4,cisco5
+VTYPASSWORD,cisco1,cisco2,cisco3,cisco4,cisco5
+TRANSPORTINPUTVTY,telnet,telnet,telnet,ssh,ssh

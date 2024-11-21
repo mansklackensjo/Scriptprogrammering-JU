@@ -1,43 +1,22 @@
-def file_analyzer1():
-    with open('text.txt' , 'r') as file:
-        number_of_paragraphs = 1
-        number_of_sentances = 0
-        number_of_words = 0
+with open('Labb5/text.txt' , 'r') as file:
+    alphabet = [0] * 26
 
-        for line in file:
-            #New line equals add a paragraph
-            if line.isalpha == True:
-                number_of_paragraphs += 1
-
-            for char in line:
-                
-            
+    text = file.read()
 
 
-        #number of words (hitta space och sedan nästa space)
-
-
-        #number of sentences (uppercase efter ett space, till punkt och sedan space.)
-
-
-        #number of paragraphs
-
-
-        #which letter is most used?
-
-                return 
+    number_of_words = len(text.split())
+    number_of_sentances = len(text.split(". "))
+    number_of_paragraphs = len(text.split("\n\n"))
     
+    text = text.lower()
+    for char in text:
+        if char.isalpha():
+            alphabet[ord(char) - ord("a")] += 1
+    
+    index_of_max = alphabet.index(max(alphabet))
 
-
-
-
-with open('text.txt' , 'r') as file:
-    number_of_paragraphs = 0
-    number_of_sentances = 0
-    number_of_words = 0
-    for line in file:
-        #New line equals add a paragraph
-        if line.isalpha == True:
-            number_of_paragraphs += 1
-        
-print(number_of_paragraphs)
+    print(number_of_paragraphs)
+    print(number_of_sentances)
+    print(number_of_words)
+    print(chr(index_of_max + ord("a")))
+    
